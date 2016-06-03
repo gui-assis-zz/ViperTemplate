@@ -7,6 +7,8 @@ Viper Template makes the process of generation of the Viper's modules easier and
 Clone the repository `https://github.com/gui-assis/ViperTemplate.git` and run installation script `make install_templates`
 
 ## How to use
+New File -> Viper -> Module
+![alt tag](https://cloud.githubusercontent.com/assets/6922756/15790532/2c4cf58c-29a8-11e6-896b-0325c5559d79.png)
 
 ## TODO
 - [x] Generate viper modules templates
