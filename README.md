@@ -4,11 +4,8 @@ Viper Template makes the process of generation of the Viper's modules easier and
 ## About Viper
 
 ## How to install
-The installation process is simple and fast. <br>
-> 1. Clone the repository <br>
-`https://github.com/gui-assis/ViperTemplate.git` <br>
-> 2. Run installation script <br>
-`make install_templates` <br>
+The installation process is simple and fast.
+> Clone the repository `https://github.com/gui-assis/ViperTemplate.git` and run installation script `make install_templates`
 
 ## How to uninstall
 > 1. Go to cloned path and run uninstallation script
