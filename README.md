@@ -30,6 +30,7 @@ New File -> Viper -> Module
 
 ## TODO
 - [x] Generate viper modules templates
+- [ ] Create sample application using ViperTemplate
 - [ ] Generate viper modules testes templates
 - [ ] Generate viper templates using RxSwift
 
