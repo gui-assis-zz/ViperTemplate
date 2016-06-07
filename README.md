@@ -20,6 +20,25 @@ VIPER is our application of Clean Architecture to iOS apps. The word VIPER is a 
  - Entities — your plain data objects, not the data access layer, because that is a responsibility of the Interactor.
 Router — responsible for the segues between the VIPER modules.
 
+##Viper files structute
+```
++-- Data
+| - {{ModuleName}}Model.swift
++-- Logic
+| - {{ModuleName}}Interactor.swift
+| - {{ModuleName}}DataManager.swift
++-- Module
+| - {{ModuleName}}Module.swift
++-- UI
+| +-- Presenter
+| | - {{ModuleName}}Presenter.swift
+| +-- Routing
+| | - {{ModuleName}}Wireframe.swift
+| +-- View
+| | # Storyboard file
+| | +-- Controllers
+| | | - {{ModuleName}}ViewController.swift  
+```
 
 ## How to install
 Clone the repository `https://github.com/gui-assis/ViperTemplate.git` and run installation script `make install_templates`

@@ -4,6 +4,9 @@
 <dict>
 	<key>DefaultCompletionName</key>
 	<string>MyModule</string>
+	<key>Concrete</key>
+	<true/>
+
 	<key>Description</key>
 	<string>This generates a new module using Viper architecture.</string>
 	<key>Kind</key>
@@ -90,20 +93,6 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_moduleName:identifier___ViewController</string>
-			<key>Description</key>
-			<string>The viewcontroller name</string>
-			<key>Identifier</key>
-			<string>viewControllerName</string>
-			<key>Name</key>
-			<string>ViewController Name:</string>
-			<key>Required</key>
-			<true/>
-			<key>Type</key>
-			<string>static</string>
-		</dict>
-		<dict>
-			<key>Default</key>
 			<string>___VARIABLE_moduleName:identifier___Protocols</string>
 			<key>Description</key>
 			<string>The module protocols file name</string>
@@ -118,27 +107,109 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>UIViewController</string>
+			<string>___VARIABLE_moduleName:identifier___Model</string>
 			<key>Description</key>
-			<string>What view controller class to subclass for the new module</string>
-			<key>FallbackHeader</key>
-			<string>#import &lt;UIKit/UIKit.h&gt;</string>
+			<string>The module model file name</string>
 			<key>Identifier</key>
-			<string>viewControllerSubclass</string>
+			<string>modelName</string>
 			<key>Name</key>
-			<string>Subclass of:</string>
-			<key>NotPersisted</key>
-			<true/>
+			<string>Model file Name:</string>
 			<key>Required</key>
-			<string>YES</string>
+			<true/>
 			<key>Type</key>
-			<string>class</string>
-			<key>Values</key>
-			<array>
-				<string>UIViewController</string>
-			</array>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_moduleName:identifier___ViewController</string>
+			<key>Description</key>
+			<string>The viewcontroller name</string>
+			<key>Identifier</key>
+			<string>viewControllerName</string>
+			<key>Name</key>
+			<string>ViewController Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
 		</dict>
 	</array>
+
+	<key>Ancestors</key>
+	<array>
+    	<string>com.apple.dt.unit.applicationBase</string>
+    	<string>com.apple.dt.unit.osxBase</string>
+	</array>
+	<key>Definitions</key>
+	<dict>
+		<key>___VARIABLE_moduleName:identifier___Configurator.swift</key>
+		<dict>
+			<key>Group</key>
+			<string>Configurator</string>
+		</dict>
+
+		<key>___VARIABLE_moduleName:identifier___Model.swift</key>
+		<dict>
+			<key>Group</key>
+			<string>Data</string>
+		</dict>
+
+		<key>___VARIABLE_moduleName:identifier___Interactor.swift</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Logic/</string>
+			</array>
+			<key>Path</key>
+			<string>___VARIABLE_moduleName:identifier___Interactor.swift</string>
+		</dict>
+
+		<key>___VARIABLE_moduleName:identifier___Protocols.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>___VARIABLE_moduleName:identifier___Protocols.swift</string>
+			<key>Group</key>
+			<array>
+				<string>Logic/</string>
+			</array>
+		</dict>
+
+		<key>___VARIABLE_moduleName:identifier___Presenter.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>___VARIABLE_moduleName:identifier___Presenter.swift</string>
+			<key>Group</key>
+			<array>
+				<string>UI/</string>
+				<string>Presenter/</string>
+			</array>
+		</dict>
+
+		<key>___VARIABLE_moduleName:identifier___Router.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>___VARIABLE_moduleName:identifier___Router.swift</string>
+			<key>Group</key>
+			<array>
+				<string>UI/</string>
+				<string>Routing/</string>
+			</array>
+		</dict>
+
+		<key>___VARIABLE_moduleName:identifier___ViewController.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>___VARIABLE_moduleName:identifier___ViewController.swift</string>
+			<key>Group</key>
+			<array>
+				<string>UI/</string>
+				<string>View/</string>
+				<string>Controller/</string>
+			</array>
+		</dict>
+	</dict>
+
+	
 	<key>Platforms</key>
 	<array>
 		<string>com.apple.platform.iphoneos</string>
