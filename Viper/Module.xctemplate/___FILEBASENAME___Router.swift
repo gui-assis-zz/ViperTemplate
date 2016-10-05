@@ -10,5 +10,6 @@
 //    - Guilherme Assis http://github.com/gui-assis
 //    - Alan Lira http://github.com/alanmlira
 
-class ___FILEBASENAMEASIDENTIFIER___Model {
+class ___FILEBASENAMEASIDENTIFIER___Router: ___FILEBASENAMEASIDENTIFIER___RouterProtocol {
+    var view: ___FILEBASENAMEASIDENTIFIER___ViewProtocol?
 }

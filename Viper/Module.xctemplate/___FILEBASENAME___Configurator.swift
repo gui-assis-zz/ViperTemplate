@@ -13,20 +13,16 @@
 import UIKit
 
 class ___FILEBASENAMEASIDENTIFIER___ModuleConfigurator {
-
-    static func configure(viewController: ___FILEBASENAMEASIDENTIFIER___ViewController) {
-
-        let router = ___FILEBASENAMEASIDENTIFIER___Router()
-
+    static func configure(view: ___FILEBASENAMEASIDENTIFIER___ViewProtocol) {
         let presenter = ___FILEBASENAMEASIDENTIFIER___Presenter()
-        presenter.view = viewController
-        presenter.router = router
-
         let interactor = ___FILEBASENAMEASIDENTIFIER___Interactor()
-        interactor.output = presenter
-
+        let router = ___FILEBASENAMEASIDENTIFIER___Router()
+        
+        presenter.view = view
+        presenter.router = router
         presenter.interactor = interactor
-        viewController.output = presenter
+        interactor.output = presenter
+        view.presenter = presenter
+        router.view = view
     }
-
 }
