@@ -12,15 +12,15 @@
 
 import UIKit
 
-class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController, ___FILEBASENAMEASIDENTIFIER___ViewInput {
+class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController, ___FILEBASENAMEASIDENTIFIER___ViewProtocol {
 
-    var output: ___FILEBASENAMEASIDENTIFIER___ViewOutput?
+    var presenter: ___FILEBASENAMEASIDENTIFIER___PresenterProtocol?
 
     // MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        ___FILEBASENAMEASIDENTIFIER___ModuleConfigurator.configure(self)
-        output!.viewIsReady()
+        ___FILEBASENAMEASIDENTIFIER___ModuleConfigurator.configure(view: self)
+        presenter?.viewIsReady()
     }
 
 

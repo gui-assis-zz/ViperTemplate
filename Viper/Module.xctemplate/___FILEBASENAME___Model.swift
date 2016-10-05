@@ -10,8 +10,5 @@
 //    - Guilherme Assis http://github.com/gui-assis
 //    - Alan Lira http://github.com/alanmlira
 
-class ___FILEBASENAMEASIDENTIFIER___Interactor: ___FILEBASENAMEASIDENTIFIER___InteractorInput {
-
-    var output: ___FILEBASENAMEASIDENTIFIER___InteractorOutput?
-
+struct ___FILEBASENAMEASIDENTIFIER___Model {
 }

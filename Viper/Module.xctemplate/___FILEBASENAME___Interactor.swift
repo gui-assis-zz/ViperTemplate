@@ -10,6 +10,8 @@
 //    - Guilherme Assis http://github.com/gui-assis
 //    - Alan Lira http://github.com/alanmlira
 
-class ___FILEBASENAMEASIDENTIFIER___Router: ___FILEBASENAMEASIDENTIFIER___RouterInput {
-    var view: ___FILEBASENAMEASIDENTIFIER___ViewInput?
+class ___FILEBASENAMEASIDENTIFIER___Interactor: ___FILEBASENAMEASIDENTIFIER___InteractorProtocol {
+
+    var output: ___FILEBASENAMEASIDENTIFIER___InteractorOutput?
+
 }

@@ -10,11 +10,11 @@
 //    - Guilherme Assis http://github.com/gui-assis
 //    - Alan Lira http://github.com/alanmlira
 
-class ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___ModuleInput, ___FILEBASENAMEASIDENTIFIER___ViewOutput, ___FILEBASENAMEASIDENTIFIER___InteractorOutput {
+class ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___PresenterProtocol, ___FILEBASENAMEASIDENTIFIER___InteractorOutput {
 
-    var view: ___FILEBASENAMEASIDENTIFIER___ViewInput?
-    var interactor: ___FILEBASENAMEASIDENTIFIER___InteractorInput?
-    var router: ___FILEBASENAMEASIDENTIFIER___RouterInput?
+    var view: ___FILEBASENAMEASIDENTIFIER___ViewProtocol?
+    var interactor: ___FILEBASENAMEASIDENTIFIER___InteractorProtocol?
+    var router: ___FILEBASENAMEASIDENTIFIER___RouterProtocol?
 
     func viewIsReady() {
         

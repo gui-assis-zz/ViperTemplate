@@ -11,33 +11,25 @@ VIPER is our application of Clean Architecture to iOS apps. The word VIPER is a 
 
 ![VIPER](https://cdn-images-2.medium.com/max/800/1*0pN3BNTXfwKbf08lhwutag.png)
 
- - View — responsible for the presentation layer (GUI), for iOS environment think of everything starting with ‘UI’ prefix.
+ - View — The presentation layer (UI).
 
  - Interactor — contains business logic related to the data (Entities) or networking, like creating new instances of entities or fetching them from the server. For those purposes you’ll use some Services and Managers which are not considered as a part of VIPER module but rather an external dependency.
 
  - Presenter — contains the UI related (but UIKit independent) business logic, invokes methods on the Interactor.
 
  - Entities — your plain data objects, not the data access layer, because that is a responsibility of the Interactor.
-Router — responsible for the segues between the VIPER modules.
 
-##Viper files structute
+ - Router — responsible for the segues and routes between the VIPER modules.
+
+##Viper files
 ```
-+-- Data
-| - {{ModuleName}}Model.swift
-+-- Logic
-| - {{ModuleName}}Interactor.swift
-| - {{ModuleName}}DataManager.swift
-+-- Module
-| - {{ModuleName}}Module.swift
-+-- UI
-| +-- Presenter
-| | - {{ModuleName}}Presenter.swift
-| +-- Routing
-| | - {{ModuleName}}Wireframe.swift
-| +-- View
-| | # Storyboard file
-| | +-- Controllers
-| | | - {{ModuleName}}ViewController.swift  
+- {{ModuleName}}ViewController.swift
+- {{ModuleName}}Interactor.swift
+- {{ModuleName}}Presenter.swift
+- {{ModuleName}}Model.swift
+- {{ModuleName}}Router.swift
+- {{ModuleName}}Configurator.swift
+- {{ModuleName}}Protocols.swift  
 ```
 
 ## How to install

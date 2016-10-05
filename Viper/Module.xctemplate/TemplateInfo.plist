@@ -6,7 +6,6 @@
 	<string>MyModule</string>
 	<key>Concrete</key>
 	<true/>
-
 	<key>Description</key>
 	<string>This generates a new module using Viper architecture.</string>
 	<key>Kind</key>
@@ -134,82 +133,28 @@
 			<string>static</string>
 		</dict>
 	</array>
-
 	<key>Ancestors</key>
 	<array>
-    	<string>com.apple.dt.unit.applicationBase</string>
-    	<string>com.apple.dt.unit.osxBase</string>
+		<string>com.apple.dt.unit.applicationBase</string>
+		<string>com.apple.dt.unit.osxBase</string>
 	</array>
 	<key>Definitions</key>
 	<dict>
 		<key>___VARIABLE_moduleName:identifier___Configurator.swift</key>
-		<dict>
-			<key>Group</key>
-			<string>Configurator</string>
-		</dict>
-
+		<dict/>
 		<key>___VARIABLE_moduleName:identifier___Model.swift</key>
-		<dict>
-			<key>Group</key>
-			<string>Data</string>
-		</dict>
-
+		<dict/>
 		<key>___VARIABLE_moduleName:identifier___Interactor.swift</key>
-		<dict>
-			<key>Group</key>
-			<array>
-				<string>Logic/</string>
-			</array>
-			<key>Path</key>
-			<string>___VARIABLE_moduleName:identifier___Interactor.swift</string>
-		</dict>
-
+		<dict/>
 		<key>___VARIABLE_moduleName:identifier___Protocols.swift</key>
-		<dict>
-			<key>Path</key>
-			<string>___VARIABLE_moduleName:identifier___Protocols.swift</string>
-			<key>Group</key>
-			<array>
-				<string>Logic/</string>
-			</array>
-		</dict>
-
+		<dict/>
 		<key>___VARIABLE_moduleName:identifier___Presenter.swift</key>
-		<dict>
-			<key>Path</key>
-			<string>___VARIABLE_moduleName:identifier___Presenter.swift</string>
-			<key>Group</key>
-			<array>
-				<string>UI/</string>
-				<string>Presenter/</string>
-			</array>
-		</dict>
-
+		<dict/>
 		<key>___VARIABLE_moduleName:identifier___Router.swift</key>
-		<dict>
-			<key>Path</key>
-			<string>___VARIABLE_moduleName:identifier___Router.swift</string>
-			<key>Group</key>
-			<array>
-				<string>UI/</string>
-				<string>Routing/</string>
-			</array>
-		</dict>
-
+		<dict/>
 		<key>___VARIABLE_moduleName:identifier___ViewController.swift</key>
-		<dict>
-			<key>Path</key>
-			<string>___VARIABLE_moduleName:identifier___ViewController.swift</string>
-			<key>Group</key>
-			<array>
-				<string>UI/</string>
-				<string>View/</string>
-				<string>Controller/</string>
-			</array>
-		</dict>
+		<dict/>
 	</dict>
-
-	
 	<key>Platforms</key>
 	<array>
 		<string>com.apple.platform.iphoneos</string>
