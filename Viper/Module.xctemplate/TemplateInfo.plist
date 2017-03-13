@@ -36,20 +36,6 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_moduleName:identifier___Configurator</string>
-			<key>Description</key>
-			<string>The configurator name</string>
-			<key>Identifier</key>
-			<string>configuratorName</string>
-			<key>Name</key>
-			<string>Configurator Name:</string>
-			<key>Required</key>
-			<true/>
-			<key>Type</key>
-			<string>static</string>
-		</dict>
-		<dict>
-			<key>Default</key>
 			<string>___VARIABLE_moduleName:identifier___Interactor</string>
 			<key>Description</key>
 			<string>The view interactor name</string>
@@ -140,8 +126,6 @@
 	</array>
 	<key>Definitions</key>
 	<dict>
-		<key>___VARIABLE_moduleName:identifier___Configurator.swift</key>
-		<dict/>
 		<key>___VARIABLE_moduleName:identifier___Model.swift</key>
 		<dict/>
 		<key>___VARIABLE_moduleName:identifier___Interactor.swift</key>

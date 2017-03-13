@@ -28,7 +28,6 @@ VIPER is our application of Clean Architecture to iOS apps. The word VIPER is a 
 - {{ModuleName}}Presenter.swift
 - {{ModuleName}}Model.swift
 - {{ModuleName}}Router.swift
-- {{ModuleName}}Configurator.swift
 - {{ModuleName}}Protocols.swift  
 ```
 
@@ -38,12 +37,6 @@ Clone the repository `https://github.com/gui-assis/ViperTemplate.git` and run in
 ## How to use
 New File -> Viper -> Module
 ![alt tag](https://cloud.githubusercontent.com/assets/6922756/15790532/2c4cf58c-29a8-11e6-896b-0325c5559d79.png)
-
-## TODO
-- [x] Generate viper modules templates
-- [ ] Create sample application using ViperTemplate
-- [ ] Generate viper modules testes templates
-- [ ] Generate viper templates using RxSwift
 
 ## References
  - [The Clean Architecture] (http://blog.8thlight.com/uncle-bob/2012/08/13/the-clean-architecture.html)

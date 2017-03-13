@@ -4,13 +4,8 @@
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
 //  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
-//
-//  VIPER Template: https://github.com/gui-assis/ViperTemplate
-//  Authors:
-//    - Guilherme Assis http://github.com/gui-assis
-//    - Alan Lira http://github.com/alanmlira
 
-import Foundation
+import UIKit
 
 protocol ___FILEBASENAMEASIDENTIFIER___ViewProtocol: class {
     var presenter: ___FILEBASENAMEASIDENTIFIER___PresenterProtocol? { get set }
@@ -35,5 +30,7 @@ protocol ___FILEBASENAMEASIDENTIFIER___InteractorOutput: class {
 }
 
 protocol ___FILEBASENAMEASIDENTIFIER___RouterProtocol: class {
-    var view: ___FILEBASENAMEASIDENTIFIER___ViewProtocol? { get set }
+	var navigationController: UINavigationController? { get set }
+    static func push___FILEBASENAMEASIDENTIFIER___Screen(navigationController: UINavigationController)
+    static func show___FILEBASENAMEASIDENTIFIER___Screen(window: UIWindow)
 }
